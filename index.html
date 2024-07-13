@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Adivinhe o número</title>
+</head>
+<body>
+    <main>
+        <h1>Adivinhe o número</h1>
+        <form>
+            <p id="menssagem">Você terá 10 tentativas para acertar um numero aleatorio de 0 a 100. </br> <strong>Boa Sorte!</strong></p>
+            <label for="inputNum" id="labelInputNum">Faça Sua tentativa</label>
+            <input type="number" id="inputNum">
+            <button class="btnEnviar">Enviar</button>
+        </form>
+        <section id="tentativas">
+            <ul class="listTentativa">
+                <li class="tentativa"></li>
+                <li class="tentativa"></li>
+                <li class="tentativa"></li>
+                <li class="tentativa"></li>
+                <li class="tentativa"></li>
+                <li class="tentativa"></li>
+                <li class="tentativa"></li>
+                <li class="tentativa"></li>
+                <li class="tentativa"></li>
+                <li class="tentativa"></li>
+            </ul>
+        </section>
+    </main>  
+    <script src="./script.js"></script>  
+</body>
+</html>
