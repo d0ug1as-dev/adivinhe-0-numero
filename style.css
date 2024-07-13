@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+}
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 330px;
+    margin: 10vh auto 0;
+    gap: 20px;
+    height: fit-content;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #fff;
+}
+ul{
+    list-style: none;
+}
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    
+    gap: 20px;
+}
+p{
+    display: flex;
+    flex-flow: column;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}
+strong{
+    display: block;
+    position: relative;
+    margin: 10px 0;
+    font-size: 1.6rem;
+}
+#labelInputNum{
+    text-align: left;
+}
+#inputNum{
+    margin-top: -20px;
+    width: 90%;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+.btnEnviar{
+    display: block;
+    width: 200px;
+    height: 2.5rem;
+    margin: -10px auto 15px;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btnEnviar:hover{
+    background-color: #07070783;
+    border: 1px solid #797878;
+}
+.btnReset{
+    display: block;
+    width: 200px;
+    height: 3.5rem;
+    padding: 10px 0;
+    margin: 10px auto 15px;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.listTentativa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+}
+.tentativa{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    box-shadow: 2px 3px 2px #ffffff7a;
+    border-radius: 3px;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.0rem;
+}
