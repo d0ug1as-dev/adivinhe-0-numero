@@ -106,7 +106,6 @@ function contagemTentativas(){
         derrota()
     }
 }
-
 function numAltoBaixo(){
     if (jogada < numAleatorio) {
         labelInputNum.innerText = "muito baixo"
@@ -114,5 +113,15 @@ function numAltoBaixo(){
         labelInputNum.innerText = "muito alto"
     } else {
         labelInputNum.innerText = "Na mosca.. Parabens!! "
+    }
+}
+function vitoria(){
+    if (jogada == numAleatorio) {
+        menssagem.innerText = `Parabens!! Voce Acertou \n ${numAleatorio} `
+        menssagem.style.color = "blue"
+        inputNum.style.display = "none"
+        btnEnviar.style.display = "none"
+        criaTag()
+        numAltoBaixo()
     }
 }
