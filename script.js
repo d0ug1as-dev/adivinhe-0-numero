@@ -90,3 +90,13 @@ function criaTag(){
 
     })
 }
+function derrota(){
+    if (tentativas[9] !== numAleatorio) {
+        menssagem.innerText = `Desquelpe, não foi dessa vez!! \n ${numAleatorio} `
+        labelInputNum.innerText = "Desanima não.. tenta de novo!! "
+        menssagem.style.color = "red"
+        inputNum.style.display = "none"
+        btnEnviar.style.display = "none"
+        criaTag()
+    }
+}
