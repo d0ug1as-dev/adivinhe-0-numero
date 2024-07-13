@@ -139,3 +139,11 @@ function validacao(){
         contagemTentativas()
     }
 }
+btnEnviar.addEventListener('click', function (e) {
+    inputNum.focus()
+    validacao()
+    vitoria()
+    inputNum.value = ""
+    e.preventDefault()
+
+})
