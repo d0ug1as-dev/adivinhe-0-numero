@@ -125,3 +125,17 @@ function vitoria(){
         numAltoBaixo()
     }
 }
+function validacao(){
+    /* validando se esta vazia, com zero ou acima de 100 */
+    if (inputNum.value == "" || inputNum.value > 100) {
+        labelInputNum.innerText = "É  preciso um numero de 0 a 100"
+        labelInputNum.style.color = "red"
+    }
+    else {
+        jogada = inputNum.value
+        getTentativas()
+        labelInputNum.style.color = ""
+        numAltoBaixo()
+        contagemTentativas()
+    }
+}
