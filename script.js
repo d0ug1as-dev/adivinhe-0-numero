@@ -78,3 +78,15 @@ function getTentativas(){
         }
     }
 }
+/* cria btn reset */
+function criaTag(){
+    const TagButton = document.createElement("button")
+    TagButton.classList.add('btnReset')
+    const TagContent = document.createTextNode = "Jogar novamente"
+    TagButton.textContent = TagContent
+    menssagem.appendChild(TagButton)
+    TagButton.addEventListener('click', function (e) {
+        window.reload()
+
+    })
+}
