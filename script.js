@@ -9,4 +9,6 @@ const btnEnviar = document.querySelector('.btnEnviar')
 /* Todas as li´s onde ficaram as jogadas */
 const tentativa = document.querySelectorAll('.tentativa')
 
-
+const numAleatorio = Number.parseInt(Math.random(100) * 101)
+const tentativas = [];
+let jogada;
