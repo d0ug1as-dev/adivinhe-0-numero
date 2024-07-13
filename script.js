@@ -106,3 +106,13 @@ function contagemTentativas(){
         derrota()
     }
 }
+
+function numAltoBaixo(){
+    if (jogada < numAleatorio) {
+        labelInputNum.innerText = "muito baixo"
+    } else if (jogada > numAleatorio) {
+        labelInputNum.innerText = "muito alto"
+    } else {
+        labelInputNum.innerText = "Na mosca.. Parabens!! "
+    }
+}
