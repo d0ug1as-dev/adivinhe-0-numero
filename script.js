@@ -100,3 +100,9 @@ function derrota(){
         criaTag()
     }
 }
+function contagemTentativas(){
+    tentativas.push(jogada)
+    if (tentativas.length == 10) {
+        derrota()
+    }
+}
