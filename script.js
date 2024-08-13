@@ -9,7 +9,7 @@ const btnEnviar = document.querySelector('.btnEnviar')
 /* Todas as li´s onde ficaram as jogadas */
 const tentativa = document.querySelectorAll('.tentativa')
 
-const numAleatorio = Number.parseInt(Math.random(100) * 101)
+const numAleatorio = Number.parseInt((Math.random()*100) + 1)
 const tentativas = [];
 let jogada;
 
@@ -39,7 +39,7 @@ function getTentativas(){
         if (tentativaZero.innerText == "") {
             formatJogada(tentativaZero) 
             break 
-        }
+        } 
         if (tentativaUm.innerText == "") {
             formatJogada(tentativaUm)
             break
@@ -127,16 +127,20 @@ function vitoria(){
 }
 function validacao(){
     /* validando se esta vazia, com zero ou acima de 100 */
-    if (inputNum.value == "" || inputNum.value > 100) {
-        labelInputNum.innerText = "É  preciso um numero de 0 a 100"
+    if (inputNum.value == "" || inputNum.value <= 0  || inputNum.value > 100) {
+        labelInputNum.innerText = "É  preciso um numero de 1 a 100"
         labelInputNum.style.color = "red"
     }
     else {
-        jogada = inputNum.value
+        if(inputNum.value !== jogada){
+            jogada = inputNum.value
         getTentativas()
         labelInputNum.style.color = ""
         numAltoBaixo()
-        contagemTentativas()
+        contagemTentativas()}else{
+           labelInputNum.innerText = "Esse você já tentou. Tente um outro numero!"
+            labelInputNum.style.color = "red"
+    }
     }
 }
 btnEnviar.addEventListener('click', function (e) {
